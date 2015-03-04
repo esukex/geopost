@@ -1,0 +1,7 @@
+<%= simple_form_for @post do |form| %>
+	<%= form.input :title %>
+	<%= form.input :body %>
+	<%= form.input :is_published %>
+	<%= form.input :is_featured %>
+	<%= form.button :submit, "Submit" %>
+<%end%>

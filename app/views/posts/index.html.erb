@@ -1,0 +1,9 @@
+<h1>Posts#index</h1>
+<section class="posts">
+	<% @posts.each do |post| %>
+			<h2><%= link_to post.title, post_path(post) %></h2>
+			<p><%= truncate post.body %></p>
+			<p>Posted <%= time_ago_in_words post.created_at %> ago.</p>
+		</div>
+	<% end %>
+</section>
